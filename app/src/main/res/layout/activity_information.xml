@@ -12,33 +12,40 @@
         android:id="@+id/textView3"
         android:layout_width="175dp"
         android:layout_height="61dp"
+        android:layout_marginTop="48dp"
         android:text="Information"
         android:textColor="@color/colorWhite"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="48dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="91dp"
         android:layout_height="99dp"
-        app:srcCompat="@drawable/ic_information"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="24dp" />
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_information" />
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="414dp"
         android:layout_height="60dp"
         android:background="@drawable/ic_bg_bottom"
         android:orientation="horizontal"
         android:padding="10dp"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="786dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewHome8"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_home"
             tools:ignore="VectorDrawableCompat"
@@ -46,22 +53,22 @@
             tools:layout_editor_absoluteY="791dp" />
 
         <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewWallet8"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_wallet"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewSetting8"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_setting"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewProfile8"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_person"
             tools:ignore="VectorDrawableCompat" />
@@ -72,27 +79,35 @@
         android:id="@+id/imageView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_bg_information"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="304dp" />
+        android:layout_marginBottom="172dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_bg_information" />
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="233dp"
         android:layout_height="156dp"
-        app:srcCompat="@drawable/wallet"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="189dp" />
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallet" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="327dp"
         android:layout_height="120dp"
+        android:layout_marginBottom="64dp"
         android:text="Aplikasi ini bertujuan untuk membantu Anda dalam menabung dan mengatur keuangan"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="15sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/imageView13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,12 +28,60 @@ public class MainActivity extends AppCompatActivity {
             User user = SharedPrefManager.getInstance(this).getUser();
 
             fullname.setText(String.valueOf(user.getFullname()));
-            wallet.setText(user.getWallet());
+            wallet.setText("Rp." + String.valueOf(user.getWallet()));
+
+            btnWishlist.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, WishlistActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            btnPendapatan.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, PendapatanActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            btnPengeluaran.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, PengeluaranActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            btnHistory.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            btnWallet.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, WalletActivity.class);
+                    startActivity(intent);
+                }
+            });
 
             btnSetting.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(MainActivity.this, SettingActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+            btnProfile.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, ProfilActivity.class);
                     startActivity(intent);
                 }
             });

@@ -11,12 +11,15 @@
         android:id="@+id/textView4"
         android:layout_width="175dp"
         android:layout_height="61dp"
+        android:layout_marginTop="384dp"
         android:text="Log Out"
         android:textColor="@color/colorWhite"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="371dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="414dp"
@@ -24,12 +27,13 @@
         android:background="@drawable/ic_bg_bottom"
         android:orientation="horizontal"
         android:padding="10dp"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="786dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewHome6"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_home"
             tools:ignore="VectorDrawableCompat"
@@ -37,22 +41,22 @@
             tools:layout_editor_absoluteY="791dp" />
 
         <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewWallet6"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_wallet"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewSetting6"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_setting"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewProfile6"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_person"
             tools:ignore="VectorDrawableCompat" />
@@ -63,27 +67,36 @@
         android:id="@+id/imageViewInformation"
         android:layout_width="91dp"
         android:layout_height="99dp"
-        app:srcCompat="@drawable/ic_information"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="193dp" />
+        android:layout_marginTop="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_information" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="175dp"
         android:layout_height="61dp"
+        android:layout_marginTop="216dp"
         android:text="Information"
         android:textColor="@color/colorWhite"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="215dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageViewLogout"
         android:layout_width="99dp"
         android:layout_height="88dp"
-        app:srcCompat="@drawable/ic_exit"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="360dp" />
+        android:layout_marginTop="364dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_exit" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

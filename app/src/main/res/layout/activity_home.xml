@@ -8,8 +8,9 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="414dp"
-        android:layout_height="155dp"
+        android:id="@+id/linearLayout3"
+        android:layout_width="409dp"
+        android:layout_height="105dp"
         android:background="@drawable/ic_bg_top"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
@@ -25,6 +26,18 @@
             android:textSize="35sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/textViewFullname"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-225dp"
+            android:layout_marginBottom="-35dp"
+            android:text="User"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
     </LinearLayout>
 
 
@@ -33,59 +46,73 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="328dp"
         android:text="Wishlist"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="407dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/dompetku4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="164dp"
         android:text="Pengeluaran"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="604dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/dompetku3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="336dp"
         android:text="Pendapatan"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="249dp"
-        tools:layout_editor_absoluteY="406dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/dompetku5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginBottom="164dp"
         android:text="History"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="604dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="414dp"
         android:layout_height="60dp"
         android:background="@drawable/ic_bg_bottom"
         android:orientation="horizontal"
         android:padding="10dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="671dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageViewHome"
@@ -119,80 +146,92 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewFullname"
-        android:layout_width="150dp"
-        android:layout_height="41dp"
-        android:layout_weight="1"
-        android:text="User"
-        android:textColor="@color/colorWhite"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="117dp" />
-
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="83dp"
         android:layout_height="60dp"
-        app:srcCompat="@drawable/wallet"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="173dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186"
+        app:srcCompat="@drawable/wallet" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="261dp"
         android:layout_height="44dp"
+        android:layout_marginTop="124dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textStyle="bold"
-        android:textSize="15sp"
         android:text="Nominal Uang Anda saat ini"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="166dp" />
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewWallet"
         android:layout_width="249dp"
         android:layout_height="27dp"
+        android:layout_marginTop="168dp"
         android:text="Rp. 35.000.000"
         android:textColor="@color/black"
         android:textSize="13sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3" />
 
     <ImageView
         android:id="@+id/imageViewWishlist"
         android:layout_width="133dp"
         android:layout_height="115dp"
-        app:srcCompat="@drawable/wishlist"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="291dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386"
+        app:srcCompat="@drawable/wishlist" />
 
     <ImageView
         android:id="@+id/imageViewPendapatan"
         android:layout_width="133dp"
         android:layout_height="117dp"
-        app:srcCompat="@drawable/pendapatan"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="291dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384"
+        app:srcCompat="@drawable/pendapatan" />
 
     <ImageView
         android:id="@+id/imageViewPengeluaran"
         android:layout_width="133dp"
         android:layout_height="115dp"
-        app:srcCompat="@drawable/pengeluaran"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="489dp" />
+        android:layout_marginBottom="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pengeluaran" />
 
     <ImageView
         android:id="@+id/imageViewHistory"
         android:layout_width="136dp"
         android:layout_height="114dp"
-        app:srcCompat="@drawable/history"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="489dp" />
+        android:layout_marginBottom="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/history" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

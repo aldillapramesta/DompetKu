@@ -11,66 +11,96 @@
         android:id="@+id/textView3"
         android:layout_width="258dp"
         android:layout_height="170dp"
+        android:layout_marginTop="40dp"
         android:gravity="center"
         android:text="HISTORY KEUANGAN ANDA"
         android:textColor="@color/colorWhite"
         android:textSize="40sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="56dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="261dp"
         android:layout_height="44dp"
+        android:layout_marginTop="252dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Nominal Uang Anda saat ini"
         android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="254dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewWallet1"
         android:layout_width="249dp"
         android:layout_height="27dp"
+        android:layout_marginTop="296dp"
         android:text="Rp. 35.000.000"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="298dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="382dp"
-        android:layout_height="346dp"
-        app:srcCompat="@drawable/ic_bg_information"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="341dp" />
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="351dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="360dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="350dp"
+            android:layout_height="346dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_bg_information" />
+    </ScrollView>
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="140dp"
         android:layout_height="89dp"
-        app:srcCompat="@drawable/wallet"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="239dp" />
+        android:layout_marginTop="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallet" />
 
     <LinearLayout
+        android:id="@+id/linearLayout6"
         android:layout_width="414dp"
         android:layout_height="60dp"
         android:background="@drawable/ic_bg_bottom"
         android:orientation="horizontal"
         android:padding="10dp"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="786dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewHome4"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_home"
             tools:ignore="VectorDrawableCompat"
@@ -78,22 +108,22 @@
             tools:layout_editor_absoluteY="791dp" />
 
         <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewWallet4"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_wallet"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewSetting4"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_setting"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewProfile4"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_person"
             tools:ignore="VectorDrawableCompat" />
@@ -108,8 +138,12 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="13sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="428dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.1" />
 
     <TextView
         android:id="@+id/textView8"
@@ -119,8 +153,12 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="13sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="428dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.1" />
 
     <TextView
         android:id="@+id/textView9"
@@ -130,16 +168,24 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="13sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="428dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.1" />
 
     <ImageView
         android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_up"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="458dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/ic_up" />
 
     <TextView
         android:id="@+id/textView10"
@@ -149,8 +195,12 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="13sp"
         android:textStyle="italic"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="464dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.25"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -173,9 +223,13 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="13sp"
         android:textStyle="italic"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="464dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.25"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView13"
@@ -197,9 +251,13 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="13sp"
         android:textStyle="italic"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="464dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.25"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView17"

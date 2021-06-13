@@ -10,15 +10,17 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="268dp"
-        android:layout_height="459dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="290dp"
         app:cardCornerRadius="5dp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="261dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="471dp"
+            android:layout_height="match_parent"
             android:background="@android:color/holo_blue_dark"
             android:orientation="vertical"
             android:padding="10dp">
@@ -30,12 +32,12 @@
                 android:layout_marginTop="8dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/viewFullName"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawableStart="@drawable/ic_person_putih"
                     android:drawableLeft="@drawable/ic_person_putih"
-                    android:drawablePadding="8dp"
-                    android:hint="Hasbi" />
+                    android:drawablePadding="8dp" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -45,29 +47,14 @@
                 android:layout_marginTop="8dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:drawableStart="@drawable/ic_person_putih"
-                    android:drawableLeft="@drawable/ic_person_putih"
-                    android:drawablePadding="8dp"
-                    android:hint="Gumay" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
-
-                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/viewUsername"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawableStart="@drawable/ic_person"
                     android:drawableLeft="@drawable/ic_person"
                     android:drawablePadding="8dp"
-                    android:hint="hasbigumay"
                     android:inputType="textPersonName" />
             </com.google.android.material.textfield.TextInputLayout>
-
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -76,51 +63,47 @@
                 android:layout_marginTop="8dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/viewCity"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawableStart="@drawable/ic_lokasi"
                     android:drawableLeft="@drawable/ic_lokasi"
                     android:drawablePadding="8dp"
-                    android:hint="London"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="126dp"
-        android:layout_height="115dp"
-        app:srcCompat="@drawable/ic_akun_lingkaran"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="135dp"
-        tools:ignore="MissingConstraints,VectorDrawableCompat" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="175dp"
         android:layout_height="61dp"
+        android:layout_marginTop="52dp"
         android:text="PROFIL"
         android:textColor="@color/colorWhite"
         android:textSize="40sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout7"
         android:layout_width="414dp"
         android:layout_height="60dp"
         android:background="@drawable/ic_bg_bottom"
         android:orientation="horizontal"
         android:padding="10dp"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="786dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewHome7"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_home"
             tools:ignore="VectorDrawableCompat"
@@ -128,22 +111,22 @@
             tools:layout_editor_absoluteY="791dp" />
 
         <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewWallet7"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_wallet"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewSetting7"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_setting"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="84dp"
+            android:id="@+id/imageViewProfile7"
+            android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_person"
             tools:ignore="VectorDrawableCompat" />
@@ -151,24 +134,26 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="132dp"
         android:layout_height="137dp"
+        android:layout_marginTop="124dp"
         android:background="@android:color/white"
         android:orientation="vertical"
         android:padding="10dp"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="127dp"
-        tools:ignore="MissingConstraints"></LinearLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-    <ImageView
+        <ImageView
             android:id="@+id/imageView18"
-            android:layout_width="126dp"
-            android:layout_height="115dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/ic_akun_lingkaran"
-            tools:layout_editor_absoluteX="142dp"
-            tools:layout_editor_absoluteY="135dp"
-        tools:ignore="MissingConstraints,VectorDrawableCompat" />
-
+            tools:ignore="MissingConstraints,VectorDrawableCompat" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
