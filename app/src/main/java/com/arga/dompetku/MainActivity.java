@@ -1,6 +1,8 @@
 package com.arga.dompetku;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -14,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        User user = SharedPrefManager.getInstance(this).getUser();
+        SharedPrefManager.getInstance(this).userLogin(user);
         setContentView(R.layout.activity_home);
         if(SharedPrefManager.getInstance(this).isLoggedIn()){
             fullname = findViewById(R.id.textViewFullname);
@@ -25,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             btnWallet = findViewById(R.id.imageViewWallet);
             btnSetting = findViewById(R.id.imageViewSetting);
             btnProfile = findViewById(R.id.imageViewProfile);
-            User user = SharedPrefManager.getInstance(this).getUser();
+
 
             fullname.setText(String.valueOf(user.getFullname()));
             wallet.setText("Rp." + String.valueOf(user.getWallet()));

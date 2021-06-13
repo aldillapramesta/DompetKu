@@ -69,8 +69,8 @@ public class LoginActivity extends AppCompatActivity {
                 new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response) {
-                        Toast.makeText(LoginActivity.this.getApplicationContext(), "Response :" + response.toString(), Toast.LENGTH_LONG).show();
-                        System.out.print(response.toString());
+                        //Toast.makeText(LoginActivity.this.getApplicationContext(), "Response :" + response.toString(), Toast.LENGTH_LONG).show();
+                        //System.out.print(response.toString());
                         try{
                             JSONObject obj = new JSONObject(response);
 

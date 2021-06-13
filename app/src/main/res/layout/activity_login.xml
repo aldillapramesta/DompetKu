@@ -85,27 +85,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentLeft="true"
-                        android:text="Remember Password" />
-
-                    <TextView
-                        android:id="@+id/forgotPassword"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:onClick="onClick"
-                        android:text="Forgot Password?"
-                        android:textColor="#073042" />
-
-                </RelativeLayout>
+                    android:layout_height="wrap_content"/>
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/btnLogin"

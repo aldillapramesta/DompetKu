@@ -8,9 +8,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Date;
+
 public class WalletActivity extends AppCompatActivity {
     ImageView btnHome, btnSetting, btnProfile;
-    TextView wallet;
+    TextView wallet, tanggal;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -20,9 +22,12 @@ public class WalletActivity extends AppCompatActivity {
             btnHome = findViewById(R.id.imageViewHome5);
             btnSetting = findViewById(R.id.imageViewSetting5);
             btnProfile = findViewById(R.id.imageViewProfile5);
+            tanggal = findViewById(R.id.textView2);
             User user = SharedPrefManager.getInstance(this).getUser();
 
             wallet.setText("Rp." + String.valueOf(user.getWallet()));
+            Date date = new Date();
+            tanggal.setText(date.toString());
 
             btnHome.setOnClickListener(new View.OnClickListener() {
                 @Override

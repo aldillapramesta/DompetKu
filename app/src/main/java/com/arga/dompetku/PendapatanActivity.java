@@ -53,6 +53,14 @@ public class PendapatanActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+
+            btnAdd.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v){
+                    Intent intent = new Intent(PendapatanActivity.this, AddPendapatanActivity.class);
+                    startActivity(intent);
+                }
+            });
         }
         else{
             Intent intent = new Intent(PendapatanActivity.this, LoginActivity.class);

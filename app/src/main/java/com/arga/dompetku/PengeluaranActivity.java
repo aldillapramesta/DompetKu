@@ -22,6 +22,14 @@ public class PengeluaranActivity extends AppCompatActivity {
             btnProfile = findViewById(R.id.imageViewProfile3);
             User user = SharedPrefManager.getInstance(this).getUser();
 
+            btnAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(PengeluaranActivity.this, AddPengeluaranActivity.class);
+                    startActivity(intent);
+                }
+            });
+
             btnHome.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

@@ -22,6 +22,14 @@ public class WishlistActivity extends AppCompatActivity {
             btnProfile = findViewById(R.id.imageViewProfile1);
             User user = SharedPrefManager.getInstance(this).getUser();
 
+            btnAdd.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(WishlistActivity.this, AddWishlistActivity.class);
+                    startActivity(intent);
+                }
+            });
+
             btnHome.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

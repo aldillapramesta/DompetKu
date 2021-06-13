@@ -29,6 +29,9 @@
         <activity android:name=".SettingActivity"/>
         <activity android:name=".WalletActivity"/>
         <activity android:name=".WishlistActivity"/>
+        <activity android:name=".AddPendapatanActivity"/>
+        <activity android:name=".AddPengeluaranActivity"/>
+        <activity android:name=".AddWishlistActivity"/>
     </application>
 
 </manifest>
