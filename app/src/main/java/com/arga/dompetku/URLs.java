@@ -10,5 +10,6 @@ public class URLs {
     public static final String URL_LIST_PENGELUARAN= ROOT_URL + "list_pengeluaran";
     public static final String URL_ADD_WISHLIST= ROOT_URL + "add_wishlist";
     public static final String URL_WISHLIST= ROOT_URL + "wishlist";
+    public static final String URL_LIST_HISTORY= ROOT_URL + "list_history";
     //public static final String URL_CHANGE_PASSWORD = ROOT_URL + "change_password";
 }

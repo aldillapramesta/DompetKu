@@ -53,6 +53,8 @@ public class AddPengeluaranActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     try {
                         addPengeluaran();
+                        AddPengeluaranActivity.this.finish();
+                        AddPengeluaranActivity.this.startActivity(new Intent(AddPengeluaranActivity.this.getApplicationContext(), MainActivity.class));
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }

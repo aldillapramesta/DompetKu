@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#375092"
+    tools:context=".WishlistActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:background="@drawable/ic_bg_custom1"
+        android:text="Hapus"
+        android:textColor="#ffff"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:background="@drawable/ic_bg_custom1"
+        android:text="Kembali"
+        android:textColor="#ffff"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="698dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="252dp"
+        android:layout_height="116dp"
+        android:gravity="center"
+        android:text="Daftar Wishlist Anda"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_bg_bottom"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="786dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_home"
+            tools:ignore="VectorDrawableCompat"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="791dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_wallet"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_setting"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_person"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:background="@drawable/ic_bg_custom1"
+        android:text="Update"
+        android:textColor="#ffff"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="302dp"
+        android:layout_height="129dp"
+        app:srcCompat="@drawable/ic_bg_pengeluaran"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naik Haji"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_bg_bottom"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="312dp"
+        android:layout_height="114dp"
+        android:text="Jika Anda ingin wishlist tercapai di tahun 2022, maka Anda harus menabung dan menghemat Uang Anda yaitu sebesar:"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 2.000.000"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Per Bulan"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

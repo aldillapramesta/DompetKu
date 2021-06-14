@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#375092"
-    tools:context=".ListPendapatanActivity">
+    tools:context=".WishlistActivity">
 
     <TextView
         android:id="@+id/textView3"
@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:gravity="center"
-        android:text="Pendapatan Anda"
+        android:text="Wishlist Anda"
         android:textColor="@color/colorWhite"
         android:textSize="40sp"
         android:textStyle="bold"
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/imageViewHome12"
+            android:id="@+id/imageViewHome14"
             android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_home"
@@ -47,21 +47,21 @@
             tools:layout_editor_absoluteY="791dp" />
 
         <ImageView
-            android:id="@+id/imageViewWallet12"
+            android:id="@+id/imageViewWallet14"
             android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_wallet"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/imageViewSetting12"
+            android:id="@+id/imageViewSetting14"
             android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_setting"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageView
-            android:id="@+id/imageViewProfile12"
+            android:id="@+id/imageViewProfile14"
             android:layout_width="95dp"
             android:layout_height="40dp"
             app:srcCompat="@drawable/ic_person"
@@ -76,11 +76,31 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="202dp"
+        android:layout_marginStart="240dp"
         android:layout_marginTop="150dp"
-        android:layout_marginEnd="38dp"
+        android:layout_marginEnd="0dp"
         android:gravity="center"
         android:text="Nominal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="171dp"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="112dp"
+        android:gravity="center"
+        android:text="Tahun"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -95,11 +115,11 @@
         android:layout_height="69dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="39dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="150dp"
-        android:layout_marginEnd="196dp"
+        android:layout_marginEnd="225dp"
         android:gravity="center"
-        android:text="Tanggal"
+        android:text="Nama Kegiatan"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -109,7 +129,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/listPendapatan"
+        android:id="@+id/listWishlist"
         android:layout_width="380dp"
         android:layout_height="323dp"
         android:layout_centerHorizontal="true"
@@ -118,7 +138,7 @@
         android:layout_marginEnd="60dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button6"
         android:layout_width="140dp"
         android:layout_height="51dp"
         android:layout_centerHorizontal="true"
@@ -133,4 +153,4 @@
         tools:ignore="MissingConstraints" />
 
 
-</RelativeLayout >
+</RelativeLayout>

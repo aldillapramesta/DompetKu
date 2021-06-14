@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#375092"
+    tools:context=".WishlistActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:background="@drawable/ic_bg_custom1"
+        android:text="Oke"
+        android:textColor="#ffff"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="644dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="252dp"
+        android:layout_height="116dp"
+        android:gravity="center"
+        android:text="Daftar Wishlist Anda"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_bg_bottom"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="786dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_home"
+            tools:ignore="VectorDrawableCompat"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="791dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_wallet"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_setting"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="84dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_person"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="320dp"
+        android:layout_height="190dp"
+        app:srcCompat="@drawable/ic_bg_wishlist"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="178dp"
+        android:layout_height="97dp"
+        android:text="Daftar Wishlist Sudah Terhapus"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

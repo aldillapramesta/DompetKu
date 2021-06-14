@@ -53,6 +53,8 @@ public class AddWishlistActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     try {
                         addWishlist();
+                        AddWishlistActivity.this.finish();
+                        AddWishlistActivity.this.startActivity(new Intent(AddWishlistActivity.this.getApplicationContext(), MainActivity.class));
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }

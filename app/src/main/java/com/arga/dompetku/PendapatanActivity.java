@@ -22,6 +22,14 @@ public class PendapatanActivity extends AppCompatActivity {
             btnProfile = findViewById(R.id.imageViewProfile2);
             User user = SharedPrefManager.getInstance(this).getUser();
 
+            btnList.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(PendapatanActivity.this, ListPendapatanActivity.class);
+                    startActivity(intent);
+                }
+            });
+
             btnHome.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

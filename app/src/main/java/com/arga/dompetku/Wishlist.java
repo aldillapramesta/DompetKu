@@ -15,6 +15,12 @@ public class Wishlist {
         this.setHarga(harga);
     }
 
+    public Wishlist(String wish, int tahun, int harga){
+        this.setWish(wish);
+        this.setTahun(tahun);
+        this.setHarga(harga);
+    }
+
 
     public int getId_wishlist() {
         return id_wishlist;

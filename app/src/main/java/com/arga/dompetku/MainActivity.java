@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        User user = SharedPrefManager.getInstance(this).getUser();
-        SharedPrefManager.getInstance(this).userLogin(user);
         setContentView(R.layout.activity_home);
         if(SharedPrefManager.getInstance(this).isLoggedIn()){
             fullname = findViewById(R.id.textViewFullname);
@@ -29,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
             btnWallet = findViewById(R.id.imageViewWallet);
             btnSetting = findViewById(R.id.imageViewSetting);
             btnProfile = findViewById(R.id.imageViewProfile);
-
+            User user = SharedPrefManager.getInstance(this).getUser();
+            SharedPrefManager.getInstance(this).userLogin(user);
 
             fullname.setText(String.valueOf(user.getFullname()));
             wallet.setText("Rp." + String.valueOf(user.getWallet()));
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             btnHistory.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+                    Intent intent = new Intent(MainActivity.this, ListHistory.class);
                     startActivity(intent);
                 }
             });

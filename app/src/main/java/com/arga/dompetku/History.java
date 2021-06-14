@@ -19,6 +19,17 @@ public class History {
         this.setKegiatan(kegiatan);
     }
 
+    public History(int nominal, String tanggal){
+        this.setNominal(nominal);
+        this.setTanggal(tanggal);
+    }
+
+    public History(String jenis, int nominal, String tanggal, String kegiatan){
+        this.setJenis(jenis);
+        this.setNominal(nominal);
+        this.setTanggal(tanggal);
+        this.setKegiatan(kegiatan);
+    }
 
     public int getId_history() {
         return id_history;

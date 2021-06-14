@@ -53,6 +53,8 @@ public class AddPendapatanActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     try {
                         addPendapatan();
+                        AddPendapatanActivity.this.finish();
+                        AddPendapatanActivity.this.startActivity(new Intent(AddPendapatanActivity.this.getApplicationContext(), MainActivity.class));
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }

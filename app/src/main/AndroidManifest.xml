@@ -32,6 +32,10 @@
         <activity android:name=".AddPendapatanActivity"/>
         <activity android:name=".AddPengeluaranActivity"/>
         <activity android:name=".AddWishlistActivity"/>
+        <activity android:name=".ListPendapatanActivity"/>
+        <activity android:name=".ListPengeluaranActivity"/>
+        <activity android:name=".ListWishlistActivity"/>
+        <activity android:name=".ListHistory"/>
     </application>
 
 </manifest>
